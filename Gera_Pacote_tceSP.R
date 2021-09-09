@@ -20,7 +20,7 @@ usethis::use_git(message = "Download de Despesas Municipais - TCE-SP")
 usethis::edit_r_environ()
 # Deixar o Renviron com uma linha em branca no fim
 
-usethis::use_github(protocol = "https")
+#usethis::use_github(protocol = "https")
 usethis::use_github_links()
 
 ## Definir Licença do pacote
@@ -30,8 +30,8 @@ usethis::use_mit_license("Eduardo Rosseti")
 usethis::use_readme_md()
 
 ## Definir as badges do pacote
-usethis::use_cran_badge()
-usethis::use_lifecycle_badge("stable")
+#usethis::use_cran_badge()
+#usethis::use_lifecycle_badge("stable")
 
 ## Criar o testthat para o pacote
 usethis::use_testthat()
@@ -47,6 +47,7 @@ usethis::use_package("testthat", type = "Suggests")
 #usethis::use_package("dplyr", type = "Imports")
 usethis::use_package("jsonlite", type = "Imports")
 usethis::use_package("RCurl", type = "Imports")
+usethis::use_package("curl", type = "Imports")
 usethis::use_package("utils", type = "Imports")
 
 
@@ -59,10 +60,10 @@ usethis::use_test("listing")
 # Document Package (Ctrl+Shift+D)
 # Check Package (Ctrl+Shift+E)
 
-usethis::use_version()
+#usethis::use_version()
 
 ## Construir pacote
 devtools::build()
 
 ## Criar site
-#pkgdown::build_site()
+pkgdown::build_site()
