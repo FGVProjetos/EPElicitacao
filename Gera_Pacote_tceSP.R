@@ -12,7 +12,7 @@ library(testthat)
 # Configurações startup ------------------------------------------------------------------
 
 ## Criar pacote:
-usethis::create_package("tceSP")
+usethis::create_package("tceSPpacote")
 
 ## Use GITHUB
 usethis::use_git(message = "Download de Despesas Municipais - TCE-SP")
