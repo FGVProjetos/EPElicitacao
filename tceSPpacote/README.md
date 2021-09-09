@@ -13,7 +13,7 @@ Este biblioteca tem o propósito de fornecer uma função para download das desp
 Link e comando para instalação do pacote:
 
 ``` r
-devtools::install_github("duduesr/tceSP/tceSP", force = T)
+devtools::install_github("FGVProjetos/EPElicitacao/tceSPpacote@main")
 ```
 
 ## Exemplo
@@ -21,14 +21,8 @@ devtools::install_github("duduesr/tceSP/tceSP", force = T)
 Exemplo de aplicação
 
 ``` r
-devtools::install_github("duduesr/tceSP/tceSP", force = T)
-```
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
 ## Leitura da Biblioteca
-library(tceSP)
+library(tceSPpacote)
 
 ##Lista de municipios 
 lista <- lista.municipios()
